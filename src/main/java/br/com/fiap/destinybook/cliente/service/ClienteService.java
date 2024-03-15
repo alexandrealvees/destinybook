@@ -27,10 +27,12 @@ public class ClienteService {
         return clienteRepository.save(clienteSalvo);
     }
     public Cliente buscarClientePeloId(Long id) {
-        Cliente clienteSalvo = clienteRepository.findById(id)
+        return clienteRepository.findById(id)
                 .orElseThrow(() -> new EmptyResultDataAccessException(1));
-        return clienteSalvo;
     }
 
+    public void delete(Cliente cliente){
+        this.clienteRepository.delete(cliente);
+    }
 
 }

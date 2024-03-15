@@ -31,7 +31,7 @@ public class ClienteDto {
         cliente.setNomeCompleto(clienteDto.getNomeCompleto());
         cliente.setDataNascimento(clienteDto.getDataNascimento());
         cliente.setTelefone(clienteDto.getTelefone());
-        cliente.setEndereco(clienteDto.getEmail());
+        cliente.setEmail(clienteDto.getEmail());
 
         return cliente;
     }

@@ -49,4 +49,14 @@ public class ClienteController {
         return cliente.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Cliente> delete(@PathVariable Long id){
+        Optional<Cliente> cliente = Optional.ofNullable(clienteService.buscarClientePeloId(id));
+        if(cliente.isPresent()){
+            this.clienteService.delete(cliente.get());
+            return ResponseEntity.ok().build();
+        }
+        return ResponseEntity.notFound().build();
+    }
+
 }

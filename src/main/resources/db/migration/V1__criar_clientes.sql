@@ -10,5 +10,5 @@ CREATE TABLE pessoa (
                         email VARCHAR(20)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO cliente (id, pais_origem, cpf, passaporte, endereco, nome_completo, data_nascimento, telefone, email)
-VALUES (3, 'Brasil', '123.456.789-00', 'AB123456', 'Rua Exemplo, 123', 'Fulano de Tal', '1990-01-01', '(00) 1234-5678', 'globo@example.com.br');
+#INSERT INTO cliente (id, pais_origem, cpf, passaporte, endereco, nome_completo, data_nascimento, telefone, email)
+#VALUES (3, 'Brasil', '123.456.789-00', 'AB123456', 'Rua Exemplo, 123', 'Fulano de Tal', '1990-01-01', '(00) 1234-5678', 'globo@example.com.br');
